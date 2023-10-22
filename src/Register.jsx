@@ -2,7 +2,7 @@ import { GoogleLogin } from "react-google-login"
 import { useState } from "react"
 import "./index.css"
 
-const clientId = "772119509134-m92sev6a3dhcn30c14s5me094ulsbht8.apps.googleusercontent.com/";
+const clientId = "772119509134-m92sev6a3dhcn30c14s5me094ulsbht8.apps.googleusercontent.com";
 
 const Register = (props) => {
     const {email, setEmail} = useState('');
@@ -22,21 +22,21 @@ const Register = (props) => {
     }
 
     return(
-        <div className="flex flex-col justify-around items-center rounded w-2/5 h-4/5 shadow-2xl">
+        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-md p-4">
             <form onSubmit={handleSubmit} className="flex flex-col relative gap-4">
                 <label htmlFor="name">Fullname</label>
                 <input
                     value={name}
                     type="name"
                     name="name"
-                    placeholder="Full Name"
+                    placeholder="enter full name"
                     className="focus:outline-blue-400 text-center p-4"
                     onChange={(e) => setName(e.target.value)}/>
                 <label htmlFor="email">Email</label>
                 <input
                     value={email}
                     type="email"
-                    placeholder="yourEmail"
+                    placeholder="example@gmail.com"
                     className="focus:outline-blue-400 text-center p-4"
                     onChange={(e) => setEmail(e.target.value)}/>
 
@@ -44,7 +44,7 @@ const Register = (props) => {
                 <input
                     value={pass}
                     type="password"
-                    placeholder="yourPassword" className="focus:outline-blue-400 text-center p-4"
+                    placeholder="yourpassword" className="focus:outline-blue-400 text-center p-4"
                     onChange={(e) => setPass(e.target.value)}/>
 
                 <button

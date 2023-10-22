@@ -2,7 +2,7 @@ import { GoogleLogin } from "react-google-login"
 import { useState } from "react"
 import "./index.css"
 
-const clientId = "772119509134-m92sev6a3dhcn30c14s5me094ulsbht8.apps.googleusercontent.com/";
+const clientId = "772119509134-m92sev6a3dhcn30c14s5me094ulsbht8.apps.googleusercontent.com";
 
 const Login = (props) => {
     const { email, setEmail } = useState('');
