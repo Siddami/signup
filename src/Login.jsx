@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { GoogleLogin } from "react-google-login"
 import { useState } from "react"
 import "./index.css"
@@ -56,7 +57,7 @@ const Login = (props) => {
                     />
                 </div>
             </form>
-            <button onClick={() => props.onFormSwitch("register")} className="text-sm">Don't have an account? <span className="text-blue-400">Register here</span></button>
+            <button onClick={() => props.onFormSwitch("register")} className="text-sm">Do not have an account? <span className="text-blue-400">Register here</span></button>
         </div>
     )
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { GoogleLogin } from "react-google-login"
 import { useState } from "react"
 import "./index.css"
