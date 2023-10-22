@@ -23,7 +23,7 @@ const Login = (props) => {
     }
 
     return (
-        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-xl">
+        <div className="flex flex-col justify-around items-center rounded md:w-4/5 h-4/5 shadow-2xl gap-3 max-w-4/5">
             <form onSubmit={handleSubmit} className="flex flex-col relative gap-7 p-4">
                 <label htmlFor="email">Email</label>
                 <input
@@ -57,7 +57,7 @@ const Login = (props) => {
                     />
                 </div>
             </form>
-            <button onClick={() => props.onFormSwitch("register")} className="text-sm">Do not have an account? <span className="text-blue-400">Register here</span></button>
+            <button onClick={() => props.onFormSwitch("register")} className="text-sm">Don't have an account? <span className="text-blue-400">Register</span></button>
         </div>
     )
 }
