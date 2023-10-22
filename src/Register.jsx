@@ -23,8 +23,8 @@ const Register = (props) => {
     }
 
     return(
-        <div className="flex flex-col justify-around items-center rounded md:w-4/5 h-4/5 shadow-2xl gap-3 max-w-4/5 p-4">
-            <form onSubmit={handleSubmit} className="flex flex-col relative gap-4">
+        <div className="flex flex-col justify-around items-center rounded w-4/5 h-[90%] shadow-2xl gap-3 p-4">
+            <form onSubmit={handleSubmit} className="flex flex-col relative gap-6 w-4/5">
                 <label htmlFor="name">Fullname</label>
                 <input
                     value={name}
@@ -50,22 +50,22 @@ const Register = (props) => {
 
                 <button
                     type="submit"
-                    className="w-2/5 h-[3em] bg-cyan-400 duration-500 flex justify-center items-center rounded cursor-pointer">
+                    className="md:w-2/5 w-4/5 h-[3em] bg-cyan-400 duration-500 flex justify-center items-center rounded cursor-pointer m-auto">
                     Log In
                 </button>
-                <div id="signInButton">
+                <div id="signInButton" className="m-auto md:w-2/5 w-4/5 h-[3em] duration-500 flex justify-center items-center rounded-md cursor-pointer">
                     <GoogleLogin
                         cliendid={clientId}
-                        buttonText="Sign Up with Google"
+                        buttonText="Sign In with Google"
                         onSuccess={onsuccess}
                         onFailure={onfailure}
                         cookiePolicy={'single-host-origin'}
                         isSignedIn={true}
-                        className="w-4/5 h-[3em] bg-cyan-400 duration-500 flex justify-center items-center rounded cursor-pointer"
+                        className="w-full"
                     />
                 </div>
             </form>
-            <button onClick={() => props.onFormSwitch("login")} className="text-sm">Already have an account? <span className="text-blue-400">Login</span></button>
+            <button onClick={() => props.onFormSwitch("login")} className="md:text-base text-sm">Already have an account? <span className="text-blue-400">Login</span></button>
         </div>
     )
 }
