@@ -51,7 +51,7 @@ const Register = (props) => {
                 <button
                     type="submit"
                     className="md:w-2/5 w-4/5 h-[3em] bg-cyan-400 duration-500 flex justify-center items-center rounded cursor-pointer m-auto">
-                    Log In
+                    Sign Up
                 </button>
                 <div id="signInButton" className="m-auto md:w-2/5 w-4/5 h-[3em] duration-500 flex justify-center items-center rounded-md cursor-pointer">
                     <GoogleLogin
