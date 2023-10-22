@@ -23,7 +23,7 @@ const Register = (props) => {
     }
 
     return(
-        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-lg p-4">
+        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-xl p-4">
             <form onSubmit={handleSubmit} className="flex flex-col relative gap-4">
                 <label htmlFor="name">Fullname</label>
                 <input

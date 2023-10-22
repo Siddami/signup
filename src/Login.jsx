@@ -23,7 +23,7 @@ const Login = (props) => {
     }
 
     return (
-        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-lg">
+        <div className="flex flex-col justify-around items-center rounded md:w-2/5 h-4/5 shadow-2xl gap-3 max-w-xl">
             <form onSubmit={handleSubmit} className="flex flex-col relative gap-7 p-4">
                 <label htmlFor="email">Email</label>
                 <input
